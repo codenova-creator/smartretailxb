@@ -146,4 +146,9 @@ export const systemApi = {
   }
 };
 
+export const getSystemEvents = () => systemApi.getEventLogs();
+export const onSystemEvent = (callback) => systemApi.subscribeEvents(callback);
+
 export default systemApi;
+
+
