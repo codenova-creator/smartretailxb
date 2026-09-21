@@ -8,7 +8,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ToastNotification from './components/ToastNotification';
 import ProtectedRoute from './components/ProtectedRoute';
-import AwsAlbBar from './components/AwsAlbBar';
 
 // Pages
 import Home from './pages/Home';
@@ -50,9 +49,6 @@ export function App() {
       <CartProvider>
         <Router>
           <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-            {/* Live AWS ALB Address & Health Ribbon */}
-            <AwsAlbBar />
-
             {/* Global Navbar */}
             <Navbar />
 
